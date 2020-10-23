@@ -1,0 +1,16 @@
+<div class="darkened">
+    <div class="card card-body">
+        <div class="modal">
+            <h3>Are you sure you want to delete your account?</h3>
+            <div class="btn-row">
+                <form  method="POST">
+                    <button class="modalBtn" type="submit" id="yesBtn">Yes, please</button>
+                    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                </form>
+
+                <button class="modalBtn" type="submit" id="noBtn">No, thanks</button>
+            </div>
+            
+        </div>
+    </div>
+</div>

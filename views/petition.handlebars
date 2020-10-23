@@ -1,0 +1,24 @@
+
+{{!-- <div class="row mt-5"> --}}
+    {{!-- <div class="col-md-6 m-auto"> --}}
+        <div class="card card-body">
+
+            <h1 class="text-center mb-3">
+                <i class="fas fa-user-plus"></i> Sign up for the petition NOW!
+            </h1>
+
+            <form method="POST">
+                <label for="signature">Your signature:</label>
+                <canvas id="canvas" width="450" height="200"></canvas>
+                <input type="hidden" id="hiddenSignature" name="signature" required>
+                <button type="submit" class="btn btn-primary btn-block">
+                    Sign Now
+                </button>
+                <input type="hidden" name="_csrf" value="{{csrfToken}}">
+             </form>
+            
+            <script src="js/script.js"></script>
+            
+        </div>
+    {{!-- </div> --}}
+{{!-- </div> --}}

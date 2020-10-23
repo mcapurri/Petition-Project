@@ -1,0 +1,32 @@
+
+<div class=class="card card-body">
+    
+<div>
+    <h2>Thank you for supporting our important cause</h2>
+</div>
+
+<div class="list">
+    <div>This is a list of people who have already signed</div>
+    <div>
+        <ul>
+            {{#names}}
+                <li>
+                    {{#if url}}
+                        <a href="http://{{url}}">
+                    {{/if}}
+
+                    {{firstname}} {{lastname}}
+
+                    {{#if url}}
+                        </a>
+                    {{/if}}
+    
+                    {{#if city}}
+                         <a href="signers/{{lower city}}">, {{city}}, {{country}}</a>
+                    {{/if}}
+                </li>
+            {{/names}}
+        </ul>
+    </div>
+</div>
+</div> 

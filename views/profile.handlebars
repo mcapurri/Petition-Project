@@ -1,0 +1,52 @@
+
+    <div class="card card-body">
+            <h1 class="text-center mb-3">
+                <i class="fas fa-user-plus"></i> Profile
+            </h1>
+            <form method="POST">
+
+                <label for="password">Password</label>
+                <div class="form-group">
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        class="form-control"
+                        placeholder="Change Password"
+                        
+                    />
+                </div>
+
+                <label for="date">Date of Birth</label>
+                <div class="form-group">
+                    <input 
+                        type="date" 
+                        name="date" 
+                        placeholder="DD-MM-YYYY" 
+                        value="{{dateBirth}}" 
+                        
+                    />
+                </div>
+
+                <label for="city">City</label>
+                <div class="form-group">
+                    <input class="form-control" type="text" name ="city" placeholder="Enter your City" value="{{city}}">
+                </div>
+
+                <label for="country">Country</label>
+                <div class="form-group">
+                    <input class="form-control" type="text" name ="country" placeholder="Enter the Country" value="{{country}}">
+                </div>
+
+                <label for="url">Website URL</label>
+                <div class="form-group">
+                    <input class="form-control" type="url" name ="url" placeholder="Enter the URL" value="{{url}}">
+                </div>
+                <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                
+                <button type="submit" class="btn btn-primary btn-block">
+                    Update
+                </button>
+            </form>
+
+    </div>

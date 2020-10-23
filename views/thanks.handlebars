@@ -1,0 +1,30 @@
+<div class="card card-body">
+
+    <h1 class="text-center mb-3">
+        <i class="fas"></i> Thank you,<br>
+    </h1>
+    <h3 class="name-thanks">{{firstname}} {{lastname}}!</h3>    
+
+    <p></p>
+
+    <p>Your signature:</p>
+    <div class="signImg">
+        <img src="{{signatureURL}}">
+    </div>
+    
+    <form action="unsign" method="POST">
+        <button type="submit" class="btn btn-primary btn-block shorter-btn"> Unsign petition</button>
+        {{!-- <button type="submit" class="btn btn-primary btn-block shorter-btn" >Delete Account</button> --}}
+    </form>
+
+     {{!-- <a href="/delete">Delete Account</a> --}}
+     <button type="submit" id="deleteBtn" class="btn btn-primary btn-block shorter-btn" >Delete Account</button>
+
+    {{> modal}}
+
+    {{!-- <form action="delete" method="POST">
+        <button type="submit" class="btn btn-primary btn-block shorter-btn" >Delete Account</button>
+    </form> --}}
+    
+     <h4>{{responseCount}} other people have already signed<br></h4><a href="./signers"> Click here to view who they are</a>
+    </div>

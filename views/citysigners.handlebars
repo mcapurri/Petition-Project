@@ -1,0 +1,27 @@
+
+<div class="card card-body">
+    <div>   
+        <h2>Thank you for supporting our cause</h2>
+        <h3>These are the people from {{city}} who signed </h3>
+    </div>
+    <div class="list">
+        <div>
+            <ul>
+                {{#names }}
+                    <li>
+                        {{#if url}}
+                            <a href="http://{{url}}">
+                        {{/if}}
+
+                        {{firstname}} {{lastname}}
+
+                        {{#if url}}
+                            </a>
+                        {{/if}}
+    
+                    </li>
+                {{/names}}
+            </ul>
+        </div>
+    </div>
+</div>

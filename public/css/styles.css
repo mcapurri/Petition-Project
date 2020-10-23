@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Bebas Neue", cursive;
+    letter-spacing: 1px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    height: 100vh;
+    width: 100vw;
+    margin-right: 0;
+}
+.nav {
+    position: absolute;
+    top: 50px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    width: 20%;
+}
+
+.navitems {
+    color: #f4f1de;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+#myname {
+    font-size: 12px;
+}
+
+.right {
+    /* width: 30%; */
+    background-color: #28262c;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: #f4f1de;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.left {
+    background-color: white;
+    width: 70%;
+}
+
+.card {
+    width: 100%;
+    border: none;
+    padding-right: 50px;
+}
+.form-group {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.text-center {
+    font-size: 60px;
+    color: #28262c;
+}
+
+.btn {
+    background-color: #28262c;
+}
+/* petition template */
+
+#canvas {
+    border: 2px #28262c solid;
+}
+.signImg {
+    width: 350px;
+    height: 150px;
+    border: 1px solid black;
+    margin-bottom: 30px;
+}
+.name-thanks {
+    text-align: center;
+}
+
+/* other pages */
+
+label {
+    margin-top: 4px;
+    margin-bottom: 0px;
+}
+
+.list {
+    /* margin: 40px; */
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+h4 {
+    margin-top: 70px;
+}
+.shorter-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 120px;
+    height: 30px;
+    font-size: 13px;
+    background-color: transparent;
+    border: none;
+    color: black;
+}
+.shorter-btn:hover {
+    background-color: transparent;
+    color: black;
+}
+
+/* Modal */
+
+.overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.744);
+    display: none;
+}
+
+.modal {
+    background-color: whitesmoke;
+    height: 30%;
+    width: 400px;
+    padding: 20px 20px;
+    z-index: 3;
+    display: none;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    position: fixed;
+    top: 20%;
+    left: 15%;
+    /* padding-top: 5px;
+    padding-bottom: 10px; */
+    border: 2px solid black;
+}
+
+.btn-row {
+    display: flex;
+    justify-content: space-evenly;
+}
+.modalBtn {
+    width: 120px;
+    margin-top: 30px;
+    background-color: #28262c;
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 660px) {
+    #canvas {
+        width: 350px;
+        height: 150px;
+    }
+    .navitems {
+        font-size: 14px;
+    }
+    #myname {
+        font-size: 10px;
+    }
+
+    /* .container {
+        display: grid;
+        grid-template-rows: auto 200px;
+        grid-template-columns: 100%;
+        height: 100vh;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .left {
+        width: 100%;
+    } */
+
+    /* .grid {
+        display: grid;
+        grid-template-columns: 32% 65%;
+        grid-template-rows: auto auto auto;
+    }
+
+    .register {
+        margin: 10px;
+    }
+
+    .nav {
+        position: static;
+        /* color: #f4f1de; */
+    /* bottom: 0px;
+        left: 5px;
+        padding: 1px; */
+    /* height: 100px; */
+    /* } */
+
+    /* form {
+        width: 95%;
+    }
+    .navitems {
+        color: #f4f1de;
+        /* text-decoration: none; */
+    /* padding-bottom: 1px;
+        margin-right: 60px;
+    }
+
+    .input {
+        width: 250px;
+        height: 50px;
+        /* width: 300px; */
+    /* font-size: 20px;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+    .registerDetails {
+        display: grid;
+        grid-template-columns: 20% 60%;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .formArea {
+        margin: 10px;
+    }
+
+    .list {
+        margin: 10px;
+    } */
+}
